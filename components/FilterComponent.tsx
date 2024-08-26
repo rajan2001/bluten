@@ -3,7 +3,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 import DualRangeSliderCustomLabel from '@/components/DualSlider';
 import { select } from '@/lib/config';
 import { CustomButton } from './customButton';
-import { X } from 'lucide-react';
+import { ChevronDown, ChevronUp, X } from 'lucide-react';
 
 
 export const FilterComponent = () => {
@@ -14,7 +14,10 @@ export const FilterComponent = () => {
         </div>
 
         <div className=" space-y-8 border-t pt-8">
-            <p className="text-center">Hersteller </p>
+            <div className="text-center flex items-center justify-between">
+                <p className='flex-1'>Hersteller</p>
+                <ChevronUp className='text-[#62C3C6]' />
+            </div>
             <div className=" space-y-4">
                 {select.map((select) => (
                     <div
@@ -74,6 +77,11 @@ export const FilterComponent = () => {
                     nicht bestrahlt
                 </button>
             </div>
+        </div>
+
+        <div className="text-center flex items-center justify-between border-t pt-8">
+            <p className='flex-1'>Terpene</p>
+            <ChevronDown className='text-[#62C3C6]' />
         </div>
 
         <button className="flex text-xs items-center w-full justify-center border-t pt-8">

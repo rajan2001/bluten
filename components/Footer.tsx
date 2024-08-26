@@ -6,17 +6,17 @@ import { Logo } from './logos/Logo';
 
 export const Footer = () => {
   return (
-    <div className="bg-[#1A8D91] h-[201px] rounded-tl-[30px] rounded-tr-[30px] font-sora mt-24 ">
-      <div className=" max-w-[75%] mx-auto flex items-start gap-x-10 text-xs  justify-center pt-10 text-white ">
-        <div>
-          <Logo />
-          <div className="  text-white/50 font-thin space-y-2 mt-4">
+    <div className="bg-[#1A8D91] rounded-tl-[30px] rounded-tr-[30px] font-sora mt-24 overflow-hidden ">
+      <div className=" max-w-[75%] mx-auto flex flex-col md:flex-row  items-start gap-10 text-xs  justify-center py-10 text-white ">
+        <div className='flex flex-row md:flex-col gap-6 items-center'>
+          <Logo color='white' />
+          <div className="  text-white/50 font-thin flex flex-row md:flex-col gap-4 ">
             <p>AGB</p>
             <p>Impressum</p>
             <p>Datenschutz</p>
           </div>
         </div>
-        <div className=" flex-wrap flex items-center gap-4 flex-1">
+        <div className=" flex-wrap md:flex items-center gap-4 flex-1 hidden">
           {routes.map((route) => (
             <div
               key={route.href}

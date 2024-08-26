@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=" max-w-[85%] mx-auto">
+        <div className=" max-w-[85%] mx-auto overflow-hidden">
           <Navbar />
           {children}
         </div>

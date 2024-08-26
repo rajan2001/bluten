@@ -37,7 +37,7 @@ const MainNavBar = ({ className, ...props }: React.HtmlHTMLAttributes<HTMLElemen
   return (
     <nav
       className={cn(
-        'lg:flex hidden items-center justify-around space-x-4 lg:space-x-6 font-sora w-1/2',
+        'flex items-center justify-around space-x-4 lg:space-x-6 font-sora w-1/2',
         className
       )}
     >
